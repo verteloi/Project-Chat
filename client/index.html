@@ -6,19 +6,21 @@
         <title>Accueil</title>
         <script src="dist/index.js"></script>
         <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/index.css">
         <link rel="icon" href="img/favicon.png" type="image/png" />
     </head>
     <body>        
-        
+        <div class="main-box">
+            <img class="top-image" src="img/person.png"></img>
         <form action="" method="post" autocomplete="off">
             <div class="sign-in-input-group">
                 <div id="api-message"></div>
-                <input type="text" name="username" placeholder="Nom d'usager" required>
-                <input type="password" name="password" placeholder="Mot de passe" required>
-                <button>Connexion</button>
+                <input type="text" name="username" placeholder="login" required>
+                <input type="password" name="password" placeholder="password" required>
+                <button class="boutton-enter">Enter</button>
             </div>
         </form>
-        <a href="register.html">S'enregistrer</a>
-
+        <a  class="register" href="register.html">register</a>
+        </div>
     </body>
 </html>
