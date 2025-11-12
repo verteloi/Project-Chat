@@ -1,8 +1,3 @@
-body {
-    background-color: black;
-    font-family: 'Cascadia Code', Consolas, 'Lucida Console', monospace;
-}
-
 .main-box {
     background-color: black;
     display: flex;
