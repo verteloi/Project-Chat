@@ -1,4 +1,5 @@
 import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-api';
+import { Trail } from './Trail';
 
 window.addEventListener("load", () => {
     document.querySelector("textarea").onkeyup = function (evt) {
@@ -41,23 +42,23 @@ const fakeCrash = (url) => {
     }, 3000);
 }
 
-// let spriteList = [];
+let spriteList = [];
 
-// window.onmousemove = e => {    
-//     spriteList.push(new Trail(e.x, e.y));
-// }
+window.onmousemove = e => {    
+    spriteList.push(new Trail(e.x, e.y));
+}
 
-// const tick = () => {
-//     for (let i = 0; i < spriteList.length; i++) {
-//         let alive = spriteList[i].tick();
+const tick = () => {
+    for (let i = 0; i < spriteList.length; i++) {
+        let alive = spriteList[i].tick();
 
-//         if (!alive) {
-//             spriteList.splice(i, 1);
-//             i--;
-//         }
-//     }
+        if (!alive) {
+            spriteList.splice(i, 1);
+            i--;
+        }
+    }
 
-//     window.requestAnimationFrame(tick);
-// }
+    window.requestAnimationFrame(tick);
+}
 
-// tick();
+tick();

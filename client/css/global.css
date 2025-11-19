@@ -14,4 +14,10 @@ body {
     background-color: black;
     font-family: 'Cascadia Code', Consolas, 'Lucida Console', monospace;
     
+    /* background-image: url("../img/windowsbg.jpg");
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden; */
 }
