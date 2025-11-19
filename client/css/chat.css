@@ -17,5 +17,123 @@
 }
 
 .chat {
-    background-color: black;
+    background-color: #0c0c0c;
+    border: 0px solid #262626;
+    color: #cccccc;
+    font-size: 14px;
+    border-top: 0px;
+    height: 460px;
+    width: 951px;
+    font-family: 'Cascadia Code', Consolas, 'Lucida Console', monospace;
+}
+
+.cmd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #262626;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+
+.cmd-body {
+    background-color: #0c0c0c;
+}
+
+.fake-text {
+    color: #cccccc;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) translateX(490px)  translateY(10px);
+    font-size: 13px;
+    height: 20px;
+    background-color: #0c0c0c;
+    border-right: 1px solid #262626;
+}
+
+.chattext {
+    color: #cccccc;
+    font-size: 14px;
+    font-family: 'Cascadia Code', Consolas, 'Lucida Console', monospace;
+}
+
+.sidebarimg  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) translateX(480px)  translateY(-142px);
+}
+
+.type-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;  /* adjust as needed */
+    /* gap: 10px; */
+}
+
+textarea {
+    /* outline: none; */
+    resize: none;
+    background-color:#0c0c0c;
+    color: #cccccc;
+    border: 1px solid #262626;
+    font-size: 17px;
+    height: 40px;
+    line-height:37px;
+    padding-left: 5px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 0px;
+}
+
+.send {
+    background-color: #0c0c0c;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+.send-image {
+    height: 38px;
+    width: auto;
+}
+
+.chat-text {
+    color: #cccccc;
+    font-size: 14px;
+    font-family: 'Cascadia Code', Consolas, 'Lucida Console', monospace;
+    list-style-type: none;
+}
+
+.prefix {
+    background-color:#0c0c0c;
+    color: #cccccc;
+    border: 1px solid #262626;
+    border-right: 0px;
+    font-size: 15px;
+    height: 40px;
+    width: 78px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    line-height:37px;
+    padding-left: 5px;
+    
+}
+
+.crash-screen {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.trail {
+    position:absolute;
+    font-size: 15px;
+	color: white;
+    font-family: 'Cascadia Code', Consolas, 'Lucida Console', monospace;
 }
